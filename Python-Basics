@@ -1,0 +1,33 @@
+
+echo "# Python-Data-Analysis-formulas" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/MrYoupiter/Python-Data-Analysis-formulas.git
+git push -u origin master
+
+
+#4. Clean data
+Find empty cells or those containing null, nan, black or strings.
+Find duplicate rows
+Find cells with missing data
+Change numerical columns from strings to numbers. 
+
+
+#2.Define Variables
+click    = training_set[training_set['Clicked']==1]
+no_click = training_set[training_set['Clicked']==0]
+
+
+#3.Print observations including sums and percentages
+print("Total =", len(training_set))
+
+print("Number of customers who clicked on Ad =", len(click))
+print("Percentage Clicked =", 1.*len(click)/len(training_set)*100.0, "%")
+ 
+print("Did not Click =", len(no_click))
+print("Percentage who did not Click =", 1.*len(no_click)/len(training_set)*100.0, "%")
+
+
+#4.First charts
+Time Series data: Scatter plot
